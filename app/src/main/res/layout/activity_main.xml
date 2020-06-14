@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="57dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/background_dark"
+        android:drawablePadding="8dp"
+        android:elevation="6dp"
+        android:fontFamily="sans-serif-medium"
+        android:insetLeft="8dp"
+        android:insetTop="10dp"
+        android:insetRight="8dp"
+        android:insetBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        android:tint="#009B2B2B"
+        android:translationZ="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211"
+        app:srcCompat="@android:drawable/stat_notify_sync" />
+
+    <EditText
+        android:id="@+id/money1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Сумма"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/convert"
+        app:layout_constraintEnd_toStartOf="@+id/money2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Currency1" />
+
+    <TextView
+        android:id="@+id/money2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="469dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/money1"
+        app:layout_constraintTop_toBottomOf="@+id/Currency2" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="405dp"
+        android:background="@android:color/background_dark"
+        android:text="Convert"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/money1" />
+
+    <TextView
+        android:id="@+id/Currency1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Рубль"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/money1"
+        app:layout_constraintEnd_toStartOf="@+id/Currency2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Currency2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Доллар"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/money2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Currency1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
